@@ -1,0 +1,18 @@
+{
+  "name": "CirqusDemo",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mookid8000/CirqusDemo",
+  "authors": [
+    "Mogens Heller Grabe <mookid8000@gmail.com>"
+  ],
+  "main": "Web\\index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

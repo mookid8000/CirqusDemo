@@ -1,0 +1,22 @@
+{
+  "name": "CirqusDemo",
+  "version": "0.0.0",
+  "description": "",
+  "main": "Web\\index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mookid8000/CirqusDemo.git"
+  },
+  "author": "Mogens Heller Grabe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mookid8000/CirqusDemo/issues"
+  },
+  "homepage": "https://github.com/mookid8000/CirqusDemo",
+  "devDependencies": {
+    "bower": "^1.3.9"
+  }
+}
