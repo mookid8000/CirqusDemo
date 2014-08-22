@@ -10,9 +10,9 @@ app.config(["$routeProvider", function ($routeProvider) {
         })
 
         // route for the about page
-        .when('/about', {
-            templateUrl: 'Scripts/About/template.html',
-            controller: 'aboutController'
+        .when('/create-list', {
+            templateUrl: 'Scripts/CreateList/template.html',
+            controller: 'createListController'
         })
 
         // route for the contact page

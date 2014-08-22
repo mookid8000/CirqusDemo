@@ -1,0 +1,33 @@
+﻿<form class="form-horizontal">
+    <fieldset>
+        <legend>Create new todoom list</legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-2 control-label" for="textinput">Title</label>
+            <div class="col-md-7">
+                <input id="textinput" name="textinput" type="text"
+                       placeholder="Type a nifty headline for the list" class="form-control input-md"
+                       ng-model="list.title">
+            </div>
+            <button class="btn" ng-click="add()"><span class="glyphicon-plus"></span></button>
+        </div>
+
+        <div class="form-group" ng-repeat="bullet in list.bullets">
+            <div class="col-md-2"></div>
+            <div class="col-md-7">
+                <input id="textinput" name="textinput" type="text"
+                       placeholder="What to do?" class="form-control input-md"
+                       ng-model="bullet.text">
+            </div>
+            <button class="btn" ng-click="remove(bullet)"><span class="glyphicon-minus"></span></button>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label" for="button1id"></label>
+            <div class="col-md-8">
+                <button id="button1id" name="button1id" class="btn btn-success" ng-click="save()">Save</button>
+                <button id="button2id" name="button2id" class="btn btn-danger" ng-click="cancel()">Abandon</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

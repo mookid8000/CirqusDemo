@@ -86,6 +86,21 @@
     <Content Include="Assets\BowerComponents\angular\angular-csp.css" />
     <Content Include="Assets\BowerComponents\angular\angular.js" />
     <Content Include="Assets\BowerComponents\angular\angular.min.js" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\img\glyphicons-halflings-white.png" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\img\glyphicons-halflings.png" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\js\bootstrap-affix.js" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\js\bootstrap-alert.js" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\js\bootstrap-button.js" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\js\bootstrap-carousel.js" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\js\bootstrap-collapse.js" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\js\bootstrap-dropdown.js" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\js\bootstrap-modal.js" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\js\bootstrap-popover.js" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\js\bootstrap-scrollspy.js" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\js\bootstrap-tab.js" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\js\bootstrap-tooltip.js" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\js\bootstrap-transition.js" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\js\bootstrap-typeahead.js" />
     <Content Include="Assets\BowerComponents\bootstrap\dist\css\bootstrap-theme.css" />
     <Content Include="Assets\BowerComponents\bootstrap\dist\css\bootstrap-theme.min.css" />
     <Content Include="Assets\BowerComponents\bootstrap\dist\css\bootstrap.css" />
@@ -110,6 +125,9 @@
     <Content Include="Assets\BowerComponents\bootstrap\js\tab.js" />
     <Content Include="Assets\BowerComponents\bootstrap\js\tooltip.js" />
     <Content Include="Assets\BowerComponents\bootstrap\js\transition.js" />
+    <Content Include="Assets\BowerComponents\flatly-less\css\flatly.css" />
+    <Content Include="Assets\BowerComponents\flatly-less\css\flatly.min.css" />
+    <Content Include="Assets\BowerComponents\flatly-less\Gruntfile.js" />
     <Content Include="Assets\BowerComponents\jquery\dist\jquery.js" />
     <Content Include="Assets\BowerComponents\jquery\dist\jquery.min.js" />
     <Content Include="Assets\BowerComponents\jquery\MIT-LICENSE.txt" />
@@ -195,7 +213,8 @@
     <Content Include="Assets\BowerComponents\jquery\src\var\support.js" />
     <Content Include="Assets\BowerComponents\jquery\src\var\toString.js" />
     <Content Include="Assets\BowerComponents\jquery\src\wrap.js" />
-    <Content Include="Scripts\About\template.html" />
+    <Content Include="Scripts\CreateList\controller.js" />
+    <Content Include="Scripts\CreateList\template.html" />
     <Content Include="Scripts\Main\controller.js" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
@@ -205,9 +224,13 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Css\theme.css" />
+    <Compile Include="Controllers\ListController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
+    <Content Include="Directives\link.directive.js" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\SomeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Scripts\app.js" />
   </ItemGroup>
@@ -315,6 +338,57 @@
     <Content Include="Assets\BowerComponents\angular-routing\.bower.json" />
     <Content Include="Assets\BowerComponents\angular-routing\bower.json" />
     <Content Include="Assets\BowerComponents\angular-routing\README.md" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\.bower.json" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\bower.json" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\accordion.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\alerts.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\bootstrap.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\breadcrumbs.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\button-groups.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\buttons.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\carousel.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\close.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\code.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\component-animations.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\dropdowns.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\forms.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\grid.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\hero-unit.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\labels-badges.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\layouts.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\media.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\mixins.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\modals.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\navbar.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\navs.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\pager.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\pagination.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\popovers.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\progress-bars.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\reset.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\responsive-1200px-min.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\responsive-767px-max.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\responsive-768px-979px.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\responsive-navbar.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\responsive-utilities.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\responsive.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\scaffolding.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\sprites.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\tables.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\thumbnails.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\tooltip.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\type.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\utilities.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\variables.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\less\wells.less" />
+    <Content Include="Assets\BowerComponents\bootstrap-less\README.md" />
+    <Content Include="Assets\BowerComponents\flatly-less\.bower.json" />
+    <Content Include="Assets\BowerComponents\flatly-less\bower.json" />
+    <Content Include="Assets\BowerComponents\flatly-less\less\bootswatch.less" />
+    <Content Include="Assets\BowerComponents\flatly-less\less\flatly.less" />
+    <Content Include="Assets\BowerComponents\flatly-less\less\variables.less" />
+    <Content Include="Assets\BowerComponents\flatly-less\package.json" />
+    <Content Include="Assets\BowerComponents\flatly-less\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

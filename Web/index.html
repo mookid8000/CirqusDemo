@@ -13,8 +13,11 @@
 
     <!-- Bootstrap core CSS -->
     <link href="Assets/BowerComponents/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- Bootstrap theme -->
-    <link href="Assets/BowerComponents/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!--<link href="Assets/BowerComponents/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">-->
+    
+    <link href="Assets/BowerComponents/flatly-less/css/flatly.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="Css/theme.css" rel="stylesheet">
@@ -46,9 +49,9 @@
                 <a class="navbar-brand" href="#">TODOOM</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                <ul class="nav navbar-nav" ng-app="link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#create-list">Create list</a></li>
                     <!--<li><a href="#contact">Contact</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
@@ -78,7 +81,10 @@
     <script src="Assets/BowerComponents/angular-route/angular-route.min.js"></script>
 
     <script src="Scripts/app.js"></script>
+
+    <script src="Directives/link.directive.js"></script>
+
     <script src="Scripts/Main/controller.js"></script>
-    <script src="Scripts/About/controller.js"></script>
+    <script src="Scripts/CreateList/controller.js"></script>
 </body>
 </html>
