@@ -46,9 +46,22 @@
     <Reference Include="Castle.Windsor">
       <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
+    <Reference Include="d60.Cirqus">
+      <HintPath>..\packages\d60.Cirqus.0.6.1\lib\NET45\d60.Cirqus.dll</HintPath>
+    </Reference>
+    <Reference Include="d60.Cirqus.MongoDb">
+      <HintPath>..\packages\d60.Cirqus.MongoDb.0.6.1\lib\NET45\d60.Cirqus.MongoDb.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Formatting, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -230,6 +243,8 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Helpers\WindsorCompositionRoot.cs" />
+    <Compile Include="Installers\MongoDbInstaller.cs" />
+    <Compile Include="Views\ListOfTodoomListsView.cs" />
     <Content Include="Css\theme.css" />
     <Compile Include="Controllers\ListController.cs" />
     <Compile Include="Controllers\MainController.cs" />
@@ -237,7 +252,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Installers\CirqusInstaller.cs" />
     <Compile Include="Installers\WebApiControllerInstaller.cs" />
+    <Compile Include="Domain\TodoomList\Events\BulletAdded.cs" />
+    <Compile Include="Domain\TodoomList\Events\TitleAssigned.cs" />
+    <Compile Include="Domain\TodoomList\TodoomListRoot.cs" />
+    <Compile Include="Domain\TodoomList\Commands\CreateNewTodoomList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Scripts\app.js" />
   </ItemGroup>
