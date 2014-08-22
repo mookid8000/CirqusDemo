@@ -79,6 +79,10 @@
     <Content Include="Assets\BowerComponents\angular-bootstrap\ui-bootstrap-tpls.min.js" />
     <Content Include="Assets\BowerComponents\angular-bootstrap\ui-bootstrap.js" />
     <Content Include="Assets\BowerComponents\angular-bootstrap\ui-bootstrap.min.js" />
+    <Content Include="Assets\BowerComponents\angular-route\angular-route.js" />
+    <Content Include="Assets\BowerComponents\angular-route\angular-route.min.js" />
+    <Content Include="Assets\BowerComponents\angular-routing\angular-routing.js" />
+    <Content Include="Assets\BowerComponents\angular-routing\LICENSE.txt" />
     <Content Include="Assets\BowerComponents\angular\angular-csp.css" />
     <Content Include="Assets\BowerComponents\angular\angular.js" />
     <Content Include="Assets\BowerComponents\angular\angular.min.js" />
@@ -191,9 +195,11 @@
     <Content Include="Assets\BowerComponents\jquery\src\var\support.js" />
     <Content Include="Assets\BowerComponents\jquery\src\var\toString.js" />
     <Content Include="Assets\BowerComponents\jquery\src\wrap.js" />
+    <Content Include="Scripts\About\template.html" />
     <Content Include="Scripts\Main\controller.js" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="Scripts\Main\template.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -302,6 +308,13 @@
     <Content Include="Assets\BowerComponents\jquery\bower.json" />
     <Content Include="Assets\BowerComponents\jquery\dist\jquery.min.map" />
     <Content Include="Assets\BowerComponents\jquery\src\sizzle\dist\sizzle.min.map" />
+    <Content Include="Assets\BowerComponents\angular-route\.bower.json" />
+    <Content Include="Assets\BowerComponents\angular-route\angular-route.min.js.map" />
+    <Content Include="Assets\BowerComponents\angular-route\bower.json" />
+    <Content Include="Assets\BowerComponents\angular-route\README.md" />
+    <Content Include="Assets\BowerComponents\angular-routing\.bower.json" />
+    <Content Include="Assets\BowerComponents\angular-routing\bower.json" />
+    <Content Include="Assets\BowerComponents\angular-routing\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
