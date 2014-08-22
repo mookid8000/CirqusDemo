@@ -1,4 +1,5 @@
-﻿using Castle.MicroKernel.Registration;
+﻿using System.Configuration;
+using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 using MongoDB.Driver;
@@ -13,9 +14,12 @@ namespace Web.Installers
                 Component.For<MongoDatabase>()
                     .UsingFactoryMethod(k =>
                     {
-                        var database = new MongoClient()
+                        var mongodbLocalhostTodoom = ConfigurationManager.AppSettings["mongodb"];
+                        var mongoUrl = new MongoUrl(mongodbLocalhostTodoom);
+
+                        var database = new MongoClient(mongoUrl)
                             .GetServer()
-                            .GetDatabase("todoom");
+                            .GetDatabase(mongoUrl.DatabaseName);
 
                         return database;
                     })
