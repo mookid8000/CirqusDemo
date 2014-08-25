@@ -1,5 +1,9 @@
 ﻿<h1>Lists</h1>
 
 <ul>
-    <li ng-repeat="list in lists">{{list.Title}}</li>
+    <li ng-repeat="list in lists"><a href="#" ng-click="showList(list.Id)">{{list.Title}}</a></li>
 </ul>
+
+<div class="modal-dialog modal">
+    <h3>This is my modal</h3>
+</div>

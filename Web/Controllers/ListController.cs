@@ -27,17 +27,17 @@ namespace Web.Controllers
                 Bullets = form.Bullets.Select(b => b.Text).ToList()
             });
         }
-    }
 
-    public class CreateListForm
-    {
-        public string Title { get; set; }
-
-        public List<Bullet> Bullets { get; set; }
-
-        public class Bullet
+        public class CreateListForm
         {
-            public string Text { get; set; }
+            public string Title { get; set; }
+
+            public List<Bullet> Bullets { get; set; }
+
+            public class Bullet
+            {
+                public string Text { get; set; }
+            }
         }
     }
 }

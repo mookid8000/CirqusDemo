@@ -19,7 +19,7 @@ namespace Web.Controllers
         }
 
         [Route("index")]
-        public object Get()
+        public ListOfTodoomLists Get()
         {
             var view = _listOfTodoomLists.Load(GlobalInstanceLocator.GetViewInstanceId());
 
